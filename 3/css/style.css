@@ -2,38 +2,26 @@
   font-family: "PTsans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PTsans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
   font-display: swap;
 }
-.list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.button {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: "PTsans", "Arial", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+html {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
 }
-.page__body {
+body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -42,6 +30,49 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+  min-width: 320px;
+  max-width: 1200px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.button {
+  display: block;
+  width: 284px;
+  margin: 0 auto;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PTsans", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #81b3d2;
+  border: none;
 }
 .navigation {
   display: flex;
@@ -67,24 +98,26 @@
 .welcome__hero {
   background-color: #81b3d2;
   text-align: center;
-}
-.welcome__hero--main {
-  background-image: url("/img/intro.jpg");
+  background-image: url("../img/intro.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 158px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome__hero--main {
+  min-height: 389px;
 }
 .welcome__info {
   padding: 19px;
 }
-.advantages {
-  margin: 0;
-}
-.advantages__item {
+.advantages__block {
   background-color: #eeeeee;
 }
-.advantages__item-wrapper--background {
+.advantages__item--photo .advantages__block {
   background-color: #81b3d2;
-  color: #ffffff;
 }
 .advantages__title {
   margin: 0;
@@ -96,37 +129,30 @@
   text-transform: uppercase;
   margin: 0;
 }
-.recommend {
-  background-color: transparent;
-}
 .recommend__item {
   padding: 23px 0 23px 48px;
   background-position: center left;
   background-repeat: no-repeat;
 }
 .recommend__item--house {
-  background-image: url("/img/icon-house.svg");
+  background-image: url("../img/icon-house.svg");
 }
 .recommend__item--food {
-  background-image: url("/img/icon-food.svg");
+  background-image: url("../img/icon-food.svg");
 }
 .recommend__item--souvenir {
-  background-image: url("/img/icon-souvenir.svg");
+  background-image: url("../img/icon-souvenir.svg");
   background-position: center left 5px;
 }
 .interest {
   padding: 38px 29px 49px 29px;
 }
-.interest__button {
-  display: inline-block;
-  padding: 16px 49px;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #81b3d2;
-  min-width: 284px;
-  font-weight: 700;
+.interest__title {
+  text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
+}
+.interest__text {
   text-transform: uppercase;
 }
 .page-footer {
@@ -162,9 +188,11 @@
   color: #333333;
   font-weight: 700;
 }
+.picture-block__rating {
+  border: none;
+}
 .video {
-  padding: 17px 27px;
-  padding-bottom: 0;
+  padding: 17px 27px 0;
 }
 .video__title {
   font-size: 18px;
@@ -208,12 +236,6 @@
 .main-form__text {
   resize: none;
   min-height: 150px;
-}
-.main-form__button {
-  color: #ffffff;
-  background-color: #81b3d2;
-  font-size: 21px;
-  line-height: 26px;
 }
 .main-form__required-field {
   font-size: 12px;
