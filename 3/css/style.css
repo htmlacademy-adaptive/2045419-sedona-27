@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "PTsans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PTsans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.button {
+  box-sizing: border-box;
+  font-family: "PTsans", "Arial", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page__body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: "PTsans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.navigation {
+  display: flex;
+}
+.navigation__link {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+}
+.navigation__link--current {
+  color: #766357;
+}
+.welcome__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.welcome__text {
+  margin: 0;
+  color: #333333;
+  text-transform: uppercase;
+}
+.welcome__hero {
+  background-color: #81b3d2;
+  text-align: center;
+}
+.welcome__hero--main {
+  background-image: url("/img/intro.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.welcome__info {
+  padding: 19px;
+}
+.advantages {
+  margin: 0;
+}
+.advantages__item {
+  background-color: #eeeeee;
+}
+.advantages__item-wrapper--background {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+.advantages__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.advantages__description {
+  text-transform: uppercase;
+  margin: 0;
+}
+.recommend {
+  background-color: transparent;
+}
+.recommend__item {
+  padding: 23px 0 23px 48px;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+.recommend__item--house {
+  background-image: url("/img/icon-house.svg");
+}
+.recommend__item--food {
+  background-image: url("/img/icon-food.svg");
+}
+.recommend__item--souvenir {
+  background-image: url("/img/icon-souvenir.svg");
+  background-position: center left 5px;
+}
+.interest {
+  padding: 38px 29px 49px 29px;
+}
+.interest__button {
+  display: inline-block;
+  padding: 16px 49px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+  min-width: 284px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.page-footer {
+  padding: 29px 23px;
+}
+.page-footer__hashtag {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.page-footer__made-by {
+  margin: 0;
+  text-transform: uppercase;
+}
+.social__link {
+  text-decoration: none;
+  min-width: 48px;
+  min-height: 48px;
+  background-color: #81b3d2;
+  display: inline-block;
+}
+.picture-block {
+  padding: 24px 20px;
+}
+.picture-block__title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.picture-block__author {
+  color: #333333;
+  font-weight: 700;
+}
+.video {
+  padding: 17px 27px;
+  padding-bottom: 0;
+}
+.video__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.video__text {
+  text-transform: uppercase;
+  color: #333333;
+}
+.main-form {
+  font-size: 18px;
+  line-height: 26px;
+}
+.main-form__filter-group {
+  padding: 24px 20px;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+.main-form__title {
+  text-transform: uppercase;
+}
+.main-form__label {
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+}
+.main-form__input {
+  font-family: "PTsans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.main-form__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.control__label {
+  font-weight: 700;
+}
+.main-form__text {
+  resize: none;
+  min-height: 150px;
+}
+.main-form__button {
+  color: #ffffff;
+  background-color: #81b3d2;
+  font-size: 21px;
+  line-height: 26px;
+}
+.main-form__required-field {
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}
+/*# sourceMappingURL=style.css.map */
