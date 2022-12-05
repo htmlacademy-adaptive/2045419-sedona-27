@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Город Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body">
+<body class="body">
   <header class="main-header">
     <nav class="main-header__navigation navigation">
       <a class="navigation__logo" href="index.html">
@@ -15,7 +16,7 @@
       <button class="navigation__button" type="button">
         <span class="visually-hidden">Открыть / Закрыть меню</span>
       </button>
-      <ul class="navigation__list">
+      <ul class="navigation__list list">
         <li class="navigation__item">
           <a class="navigation__link" href="index.html">Главная</a>
         </li>
@@ -35,7 +36,7 @@
     <section class="welcome">
       <h1 class="visually-hidden">Город Седона.</h1>
       <div class="welcome__hero">
-        <img class="welcome__image" src="img/intro.jpg" width="320" height="158" alt="Добро пожаловать в прекрасную Седону.">
+        <img class="welcome__image" src="img/sedona.svg" width="229" height="39" alt="Добро пожаловать в прекрасную Седону.">
       </div>
       <div class="welcome__info">
         <h2 class="welcome__title">Оставьте свой отзыв</h2>
@@ -65,7 +66,7 @@
         </div>
         <fieldset class="main-form__filter-group main-form__filter-group--impression">
           <h3 class="main-form__title">Ваше общее впечатление:</h3>
-          <ul class="main-form__list">
+          <ul class="main-form__list list">
             <li class="main-form__item">
               <label class="main-form__control control">
                 <input class="visually-hidden control__input" type="radio" name="impression-type" value="positive" checked>
@@ -91,7 +92,7 @@
         </fieldset>
         <fieldset class="main-form__filter-group main-form__filter-group--sights">
           <h3 class="main-form__title">Посещенные достопримечательности:</h3>
-          <ul class="main-form__list">
+          <ul class="main-form__list list">
             <li class="main-form__item">
               <label class="main-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="sights" value="devil-bridge" checked>
@@ -110,14 +111,14 @@
               <label class="main-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="sights" value="slide-park" checked>
                 <span class="control__checkbox"></span>
-                <span class="control__label">Слайд-Парк</span>
+                <span class="control__label">Слайд-парк</span>
               </label>
             </li>
             <li class="main-form__item">
               <label class="main-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="sights" value="red-rock">
                 <span class="control__checkbox"></span>
-                <span class="control__label">Красные-Скалы</span>
+                <span class="control__label">Красные скалы</span>
               </label>
             </li>
           </ul>
@@ -125,7 +126,7 @@
         <fieldset class="main-form__filter-group main-form__filter-group--emotions">
           <h3 class="main-form__title">Опишите свои эмоции:</h3>
           <label>
-            <textarea class="main-form__text" placeholder="Опишите подробно все свои восторги" name="emotions-text"></textarea>
+            <textarea class="main-form__text main-form__input" placeholder="Опишите подробно все свои восторги" name="emotions-text"></textarea>
           </label>
         </fieldset>
         <fieldset class="main-form__filter-group main-form__filter-group--submit">
@@ -137,7 +138,7 @@
   </main>
   <footer class="page-footer">
     <a class="page-footer__hashtag" href="#">#visitSEDONA</a>
-    <ul class="page-footer__social social">
+    <ul class="page-footer__social social list">
       <li class="social__item">
         <a class="social__link" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">ссылка на группу вк.</span>
