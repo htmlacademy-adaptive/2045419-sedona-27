@@ -1,0 +1,40 @@
+.control {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 10px;
+
+  &--circle .control__mark {
+    border-radius: 50%;
+  }
+
+  &--circle .control__input:checked + .control__mark::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #000000;
+    border-radius: 50%;
+  }
+}
+
+.control__input {
+  &:checked + .control__mark::before {
+    position: absolute;
+    content: url("../img/tick-icon.svg");
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.control__mark {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.control__label {
+  font-weight: 700;
+  align-self: center;
+}

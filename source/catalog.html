@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Город Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
   <header class="main-header">
-    <nav class="main-header__navigation navigation">
+    <nav class="main-header__navigation navigation navigation navigation--is-closed">
       <a class="navigation__logo" href="index.html">
         <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
@@ -21,8 +22,9 @@
           <a class="navigation__link" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current">Фото и видео</a>
+          <a class="navigation__link navigation__link--is-current">Фото и видео</a>
         </li>
+        <li class="navigation__item"></li>
         <li class="navigation__item">
           <a class="navigation__link" href="form.html">Форма отзыва</a>
         </li>
@@ -45,11 +47,11 @@
     </section>
     <section class="multimedia">
       <h2 class="visually-hidden">Мультимедийная галерея.</h2>
-      <div class="multimedia__block picture-block">
+      <div class="multimedia__block picture-block picture-block--custom">
         <a class="picture-block__link" href="#">
           <img src="img/road-image.jpg" alt="дорога под закатным небом." width="280" height="280">
         </a>
-        <div class="picture-block__wrapper">
+        <div class="picture-block__wrapper picture-block__wrapper--extra-padding">
           <div class="picture-block__text-wrapper">
             <p class="picture-block__title">Народные просторы</p>
             <p class="picture-block__author">Автор фото: Борис</p>
@@ -126,6 +128,7 @@
       <a class="made-by__link" href="https://htmlacademy.ru/"></a>
     </p>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

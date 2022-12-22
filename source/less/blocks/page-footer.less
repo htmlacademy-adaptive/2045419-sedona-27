@@ -1,5 +1,21 @@
 .page-footer {
-  padding: 29px 23px;
+  padding: 29px 18px 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 233px;
+
+  @media (min-width: 768px) {
+    flex-direction: initial;
+    padding: 36px 76px 36px 45px;
+    min-height: 120px;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: initial;
+    padding: 36px 136px 36px 104px;
+  }
 }
 
 .page-footer__hashtag {
@@ -9,6 +25,7 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  display: block;
 }
 
 .page-footer__made-by {
