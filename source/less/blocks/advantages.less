@@ -21,11 +21,10 @@
 
 .advantages__list {
   padding-bottom: 4px;
-  display: grid;
-  grid-template-columns: 1fr;
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -50,12 +49,6 @@
     }
   }
 
-  &:nth-of-type(3n+4) .advantages__block {
-    @media (min-width: 768px) and (max-width: 1199px) {
-      padding-top: 41px;
-    }
-  }
-
   &:not(:first-of-type):nth-of-type(odd) .advantages__block {
     @media (min-width: 1200px) {
       padding-bottom: 41px;
@@ -72,6 +65,10 @@
       flex-direction: column;
       grid-column: 1 / -1;
     }
+
+    &:first-of-type .advantages__block {
+      padding: 54px 18px 40px;
+    }
   }
 
   &--photo .advantages__block {
@@ -83,35 +80,36 @@
     }
   }
 
+  &--photo:nth-of-type(2n) .advantages__item-wrapper .advantages__image {
+    @media (min-width: 768px) {
+      order: -1;
+    }
+  }
+
   &--photo:nth-of-type(2n) .advantages__item-wrapper {
     @media (min-width: 768px) {
-      direction: rtl;
+      grid-template-columns: 2fr 1fr;
     }
-  }
-
-  &--photo:nth-of-type(2n) .advantages__item-wrapper * {
-    @media (min-width: 768px) {
-      direction: ltr;
-    }
-  }
-
-  &--main .advantages__block {
-    padding: 54px 18px 40px;
   }
 }
 
 .advantages__item-wrapper {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 }
 
 .advantages__block {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  display: grid;
-  gap: 15px;
+  height: 100%;
+  min-height: 256px;
+  padding: 22px 30px 22px;
 
   @media (min-width: 768px) {
     padding: 52px 33px 31px 33px;
@@ -127,9 +125,23 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    padding: 0 27px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 90px;
+  }
 }
 
 .advantages__description {
   text-transform: uppercase;
   margin: 0;
+}
+
+.advantages__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
