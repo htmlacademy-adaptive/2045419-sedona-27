@@ -1,17 +1,14 @@
-.picture-block {
+.multimedia {
   padding: 24px 20px;
-}
 
-.picture-block__title {
-  font-weight: 700;
-  text-transform: uppercase;
-}
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 42px 60px;
+  }
 
-.picture-block__author {
-  color: #333333;
-  font-weight: 700;
-}
-
-.picture-block__rating {
-  border: none;
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 0 0 0;
+  }
 }

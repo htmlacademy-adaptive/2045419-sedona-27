@@ -3,19 +3,17 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Город Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
   <header class="main-header">
-    <nav class="main-header__navigation navigation">
+    <nav class="main-header__navigation navigation navigation--is-closed">
       <a class="navigation__logo">
         <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
-      <button class="navigation__button" type="button">
-        <span class="visually-hidden">Открыть / Закрыть меню</span>
-      </button>
       <ul class="navigation__list list">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--current">Главная</a>
@@ -30,6 +28,9 @@
           <a class="navigation__link" href="https://htmlacademy.ru">Html Academy</a>
         </li>
       </ul>
+      <button class="navigation__button" type="button">
+        <span class="visually-hidden">Открыть / Закрыть меню</span>
+      </button>
     </nav>
   </header>
   <main>
@@ -47,14 +48,18 @@
       <h2 class="visually-hidden">Преимущества.</h2>
       <ul class="advantages__list list">
         <li class="advantages__item advantages__item--photo">
-          <div class="advantages__item-wrapper advantages__item-wrapper--background">
+          <div class="advantages__item-wrapper">
             <div class="advantages__block">
               <h3 class="advantages__title">Настоящий городок</h3>
               <span class="advantages__numeral">— №1 —</span>
               <p class="advantages__description">Cедона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="advantages__image">
-              <img src="img/town-image.jpg" width="320" height="260" alt="домик спрятанный в листве.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/city-desktop.jpg, img/city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/city-tablet.jpg, img/city-tablet@2x.jpg 2x">
+                <img src="img/city.jpg" srcset="img/city@2x.jpg 2x" width="320" height="260" alt="картинка города Седона.">
+              </picture>
             </div>
           </div>
           <ul class="advantages__recommend recommend list">
@@ -64,23 +69,27 @@
             </li>
             <li class="recommend__item recommend__item--food">
               <h3 class="advantages__title">Еда</h3>
-              <p class="advantages__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="advantages__description">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
             </li>
             <li class="recommend__item recommend__item--souvenir">
               <h3 class="advantages__title">Сувениры</h3>
-              <p class="advantages__description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="advantages__description">Не только китайского, но&nbsp;и местного производства!</p>
             </li>
           </ul>
         </li>
         <li class="advantages__item advantages__item--photo">
-          <div class="advantages__item-wrapper advantages__item-wrapper--background">
+          <div class="advantages__item-wrapper">
             <div class="advantages__block">
-              <h3 class="advantages__title">Там есть мост дьявола</h3>
+              <h3 class="advantages__title">Там есть мост&nbsp;дьявола</h3>
               <span class="advantages__numeral">— №2 —</span>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
             <div class="advantages__image">
-              <img src="img/advantages-bridge.jpg" width="320" height="260" alt="проход между скал выглядящий как мост.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg, img/bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg, img/bridge-tablet@2x.jpg 2x">
+                <img src="img/bridge.jpg" srcset="img/bridge@2x.jpg 2x" width="320" height="260" alt="проход между скал.">
+              </picture>
             </div>
           </div>
         </li>
@@ -88,21 +97,21 @@
           <div class="advantages__block">
             <h3 class="advantages__title">Небольшая площадь</h3>
             <span class="advantages__numeral">— №3 —</span>
-            <p class="advantages__description">Все достопримечательности находятся очень близко</p>
+            <p class="advantages__description">Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="advantages__item">
           <div class="advantages__block">
             <h3 class="advantages__title">Красивая дорога</h3>
             <span class="advantages__numeral">— №4 —</span>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
           </div>
         </li>
         <li class="advantages__item">
           <div class="advantages__block">
             <h3 class="advantages__title">Мало туристов</h3>
             <span class="advantages__numeral">— №5 —</span>
-            <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="advantages__description">Большинство едет в Гранд Каньон и толпится&nbsp;там</p>
           </div>
         </li>
       </ul>
@@ -114,7 +123,7 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта города Седона.</h2>
-      <iframe
+      <iframe class="map__image"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840778.1433737437!2d-111.7267109842347!3d34.59683718487065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1669544793178!5m2!1sru!2s">
       </iframe>
     </section>
@@ -142,6 +151,7 @@
       <a class="made-by__link" href="https://htmlacademy.ru/"></a>
     </p>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

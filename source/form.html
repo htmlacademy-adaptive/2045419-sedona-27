@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Город Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
   <header class="main-header">
-    <nav class="main-header__navigation navigation">
+    <nav class="main-header__navigation navigation navigation--is-closed">
       <a class="navigation__logo" href="index.html">
         <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
@@ -48,41 +49,46 @@
       <form class="feedback__form main-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="main-form__wrapper">
           <fieldset class="main-form__filter-group main-form__filter-group--personal">
-            <h3 class="main-form__title">Представьтесь:</h3>
-            <label class="main-form__label" for="first-name">Имя*:</label>
-            <input class="main-form__input" type="text" name="first-name" id="first-name" placeholder="введите имя" value="Пётр" required>
-            <label class="main-form__label" for="last-name">Фамилия*:</label>
-            <input class="main-form__input" type="text" name="last-name" id="last-name" placeholder="введите фамилию" value="Пустота" required>
-            <label class="main-form__label" for="middle-name">Отчество:</label>
-            <input class="main-form__input" type="text" name="middle-name" id="middle-name" placeholder="введите отчество" value="Викторович">
+            <legend class="main-form__title">Представьтесь:</legend>
+            <label class="main-form__label" for="first-name">Имя*:
+              <input class="main-form__input" type="text" name="first-name" id="first-name" placeholder="введите имя" value="Пётр" required>
+            </label>
+            <label class="main-form__label" for="last-name">Фамилия*:
+              <input class="main-form__input" type="text" name="last-name" id="last-name" placeholder="введите фамилию" value="Пустота" required>
+            </label>
+            <label class="main-form__label" for="middle-name">Отчество:
+              <input class="main-form__input" type="text" name="middle-name" id="middle-name" placeholder="введите отчество" value="Викторович">
+            </label>
           </fieldset>
           <fieldset class="main-form__filter-group main-form__filter-group--contacts">
-            <h3 class="main-form__title">Контактная информация:</h3>
-            <label class="main-form__label" for="phone">Контактный телефон*:</label>
-            <input class="main-form__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
-            <label class="main-form__label" for="email">Электронная почта*:</label>
-            <input class="main-form__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+            <legend class="main-form__title">Контактная информация:</legend>
+            <label class="main-form__label" for="phone">Контактный телефон*:
+              <input class="main-form__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+            </label>
+            <label class="main-form__label" for="email">Электронная почта*:
+              <input class="main-form__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+            </label>
           </fieldset>
         </div>
         <fieldset class="main-form__filter-group main-form__filter-group--impression">
-          <h3 class="main-form__title">Ваше общее впечатление:</h3>
+          <legend class="main-form__title">Ваше общее впечатление:</legend>
           <ul class="main-form__list list">
             <li class="main-form__item">
-              <label class="main-form__control control">
+              <label class="main-form__control control control--circle">
                 <input class="visually-hidden control__input" type="radio" name="impression-type" value="positive" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее положительное</span>
               </label>
             </li>
             <li class="main-form__item">
-              <label class="main-form__control control">
+              <label class="main-form__control control control--circle">
                 <input class="visually-hidden control__input" type="radio" name="impression-type" value="negative" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="main-form__item">
-              <label class="main-form__control control">
+              <label class="main-form__control control control--circle">
                 <input class="visually-hidden control__input" type="radio" name="impression-type" value="difficult" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Затрудняюсь ответить</span>
@@ -91,48 +97,48 @@
           </ul>
         </fieldset>
         <fieldset class="main-form__filter-group main-form__filter-group--sights">
-          <h3 class="main-form__title">Посещенные достопримечательности:</h3>
-          <ul class="main-form__list list">
+          <legend class="main-form__title">Посещенные достопримечательности:</legend>
+          <ul class="main-form__list main-form__list--extra-column list">
             <li class="main-form__item">
               <label class="main-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="sights" value="devil-bridge" checked>
-                <span class="control__checkbox"></span>
+                <span class="control__mark"></span>
                 <span class="control__label">Мост Дьявола</span>
               </label>
             </li>
             <li class="main-form__item">
               <label class="main-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="sights" value="bell-rock" checked>
-                <span class="control__checkbox"></span>
+                <span class="control__mark"></span>
                 <span class="control__label">Гора-Колокол</span>
               </label>
             </li>
             <li class="main-form__item">
               <label class="main-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="sights" value="slide-park" checked>
-                <span class="control__checkbox"></span>
+                <span class="control__mark"></span>
                 <span class="control__label">Слайд-парк</span>
               </label>
             </li>
             <li class="main-form__item">
               <label class="main-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="sights" value="red-rock">
-                <span class="control__checkbox"></span>
+                <span class="control__mark"></span>
                 <span class="control__label">Красные скалы</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="main-form__filter-group main-form__filter-group--emotions">
-          <h3 class="main-form__title">Опишите свои эмоции:</h3>
+          <legend class="main-form__title">Опишите свои эмоции:</legend>
           <label>
             <textarea class="main-form__text main-form__input" placeholder="Опишите подробно все свои восторги" name="emotions-text"></textarea>
           </label>
         </fieldset>
-        <fieldset class="main-form__filter-group main-form__filter-group--submit">
+        <div class="main-form__filter-group main-form__filter-group--submit">
           <button class="main-form__button button" type="submit">Отправить отзыв</button>
           <p class="main-form__required-field">* — обязательные поля</p>
-        </fieldset>
+        </div>
       </form>
     </section>
   </main>
@@ -159,6 +165,7 @@
       <a class="made-by__link" href="https://htmlacademy.ru/"></a>
     </p>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
