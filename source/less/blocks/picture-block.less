@@ -3,9 +3,44 @@
     grid-column: 1 / -1;
   }
 
+  &:not(:last-of-type) {
+    @media (max-width: 767px) {
+      margin-bottom: 54px;
+    }
+  }
+
+  &:not(:first-of-type) .picture-block__rating-wrapper {
+    margin-bottom: 13px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 21px;
+    }
+  }
+
   &:first-of-type > .picture-block__wrapper {
     @media (min-width: 1200px) {
-      padding: 19px 20px 15px 21px;
+      padding: 22px 20px 0 21px;
+      bottom: -13px;
+    }
+  }
+
+  &:first-of-type .picture-block__title {
+    @media (min-width: 1200px) {
+      margin-bottom: 1px;
+    }
+  }
+
+  &:first-of-type .picture-block__author {
+    @media (min-width: 768px) {
+      margin-bottom: 13px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 28px;
     }
   }
 
@@ -25,13 +60,15 @@
 }
 
 .picture-block__wrapper {
-  padding: 15px 0 25px;
+  padding: 15px 0 0;
+
 
   @media (min-width: 768px) {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: #f2f2f2;
-    padding: 22px 20px 15px;
+    padding: 22px 20px 4px;
   }
 
   @media (min-width: 1200px) {
@@ -41,32 +78,68 @@
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 17px 20px 17px 25px;
+    padding: 17px 20px 0 25px;
   }
 }
 
 .picture-block__title {
-  margin: 0 0 4px 0;
+  margin: 0 0 1px 0;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 3px;
+  }
 }
 
 .picture-block__author {
   color: #333333;
-  margin: 0;
+  margin: 0 0 12px;
 
   @media (min-width: 1200px) {
     color: #ffffff;
+    margin-bottom: 17px;
+  }
+}
+
+.picture-block__rating-wrapper {
+  display: grid;
+  grid-template-columns: 23px 1fr;
+  gap: 9px;
+
+  @media (min-width: 768px) {
+    gap: 4px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 37px;
   }
 }
 
 .picture-block__rating {
   border: none;
   background-color: transparent;
-  padding-left: 37px;
-  font-weight: 700;
+  padding: 0;
+  width: 23px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.picture-block__rating svg {
+  fill: rgba(0, 0, 0, 0.3);
 
   @media (min-width: 1200px) {
-    color: #ffffff;
+    fill: #ffffff;
   }
+}
+
+.picture-block__number {
+  font-weight: 700;
+  transform: translateY(4px);
+  display: block;
+  margin-left: 5px;
 }
