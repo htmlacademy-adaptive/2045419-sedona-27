@@ -142,20 +142,6 @@
           <button class="main-form__button button" type="submit">Отправить отзыв</button>
           <p class="main-form__required-field">* — обязательные поля</p>
         </div>
-        <div class="form-modal">
-          <div class="form-modal__block form-modal__block--success">
-            <h2 class="form-modal__title">Ваш отзыв отправлен!</h2>
-            <p class="form-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил&nbsp;к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
-            <div class="form-modal__close-button-wrapper">
-              <button class="form-modal__close-button button" type="button">закрыть окно</button>
-            </div>
-          </div>
-          <div class="form-modal__block form-modal__block--error">
-            <h2 class="form-modal__title">Что-то пошло не&nbsp;так!</h2>
-            <p class="form-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button class="form-modal__close-button button" type="button">ок</button>
-          </div>
-        </div>
       </form>
     </section>
   </main>
@@ -193,6 +179,30 @@
       </svg>
     </a>
   </footer>
+  <!-- открытие модального окна modal--open -->
+  <!-- сообщение об успехе  modal--open modal--open-success,  -->
+  <!-- сообщение об ошибке  modal--open modal--open-error -->
+  <section class="modal">
+    <div class="modal__container modal__container-error">
+      <div class="modal__wrapper-text">
+        <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal__wrapper-btn">
+        <button class="modal__button button">Ок</button>
+      </div>
+    </div>
+
+    <div class="modal__container modal__container-success">
+      <div class="modal__wrapper-text">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__wrapper-btn">
+        <button class="modal__button button">Закрыть окно</button>
+      </div>
+    </div>
+  </section>
   <script src="./js/main.js"></script>
 </body>
 
