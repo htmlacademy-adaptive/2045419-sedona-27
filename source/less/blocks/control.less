@@ -17,10 +17,6 @@
   }
 }
 
-.control:hover .control__mark {
-  background-color: #e5e5e5;
-}
-
 .control:active .control__mark {
   background-color: #d5d5d5;
 }
@@ -49,6 +45,11 @@
 .control__input:disabled {
   opacity: 0.1;
   pointer-events: none;
+}
+
+.control:hover .control__mark {
+  background-color: #e5e5e5;
+  outline: none;
 }
 
 .control__mark {

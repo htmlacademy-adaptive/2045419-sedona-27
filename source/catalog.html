@@ -79,13 +79,13 @@
               <p class="picture-block__title">Неродные просторы</p>
               <p class="picture-block__author">Автор фото: Борис</p>
             </div>
-              <button class="picture-block__rating" type="button">
-                <span class="visually-hidden">Поставить оценку.</span>
-                <svg width="23" height="21" viewBox="0 0 23 21">
-                  <use href="img/icons/sprite.svg#like-icon"></use>
-                </svg>
-                <span class="picture-block__number">1350</span>
-              </button>
+            <button class="picture-block__rating" type="button">
+              <span class="visually-hidden">Поставить оценку.</span>
+              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true" focusable="false">
+                <use href="img/icons/sprite.svg#like-icon"></use>
+              </svg>
+              <span class="picture-block__number">1350</span>
+            </button>
           </div>
         </li>
         <li class="multimedia__list__block picture-block">
@@ -111,13 +111,13 @@
               <p class="picture-block__title">Местная растительность</p>
               <p class="picture-block__author">Автор фото: Сергей</p>
             </div>
-              <button class="picture-block__rating" type="button">
-                <span class="visually-hidden">Поставить оценку.</span>
-                <svg width="23" height="21" viewBox="0 0 23 21">
-                  <use href="img/icons/sprite.svg#like-icon"></use>
-                </svg>
-                <span class="picture-block__number">143</span>
-              </button>
+            <button class="picture-block__rating" type="button">
+              <span class="visually-hidden">Поставить оценку.</span>
+              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true" focusable="false">
+                <use href="img/icons/sprite.svg#like-icon"></use>
+              </svg>
+              <span class="picture-block__number">143</span>
+            </button>
           </div>
         </li>
         <li class="multimedia__list__block picture-block">
@@ -143,13 +143,13 @@
               <p class="picture-block__title">Дорога на север</p>
               <p class="picture-block__author">Автор фото: Петр</p>
             </div>
-              <button class="picture-block__rating picture-block__rating--min-size" type="button">
-                <span class="visually-hidden">Поставить оценку.</span>
-                <svg width="23" height="21" viewBox="0 0 23 21">
-                  <use href="img/icons/sprite.svg#like-icon"></use>
-                </svg>
-                <span class="picture-block__number">96</span>
-              </button>
+            <button class="picture-block__rating picture-block__rating--min-size" type="button">
+              <span class="visually-hidden">Поставить оценку.</span>
+              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true" focusable="false">
+                <use href="img/icons/sprite.svg#like-icon"></use>
+              </svg>
+              <span class="picture-block__number">96</span>
+            </button>
           </div>
         </li>
         <li class="multimedia__list__block picture-block">
@@ -175,13 +175,13 @@
               <p class="picture-block__title">Мост дьявола</p>
               <p class="picture-block__author">Автор фото: Антон</p>
             </div>
-              <button class="picture-block__rating" type="button">
-                <span class="visually-hidden">Поставить оценку.</span>
-                <svg width="23" height="21" viewBox="0 0 23 21">
-                  <use href="img/icons/sprite.svg#like-icon"></use>
-                </svg>
-                <span class="picture-block__number">254</span>
-              </button>
+            <button class="picture-block__rating" type="button">
+              <span class="visually-hidden">Поставить оценку.</span>
+              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true" focusable="false">
+                <use href="img/icons/sprite.svg#like-icon"></use>
+              </svg>
+              <span class="picture-block__number">254</span>
+            </button>
           </div>
         </li>
       </ul>
@@ -190,25 +190,28 @@
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
       <div class="video__wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp, img/video-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp, img/video-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/video.webp, img/video@2x.webp 2x">
-          <!--mobile-1x: 280px-->
-          <!--mobile-2x: 560px-->
-          <!--tablet-1x: 648px-->
-          <!--tablet-2x: 1296px-->
-          <!--desktop-1x: 800px-->
-          <!--desktop-2x: 1600px-->
-          <img srcset="img/video.jpg 280w, img/video@2x.jpg 560w,
+        <a class="video__link" href="#" aria-label="ссылка на мотивирующее видео">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video.webp, img/video@2x.webp 2x">
+            <!--mobile-1x: 280px-->
+            <!--mobile-2x: 560px-->
+            <!--tablet-1x: 648px-->
+            <!--tablet-2x: 1296px-->
+            <!--desktop-1x: 800px-->
+            <!--desktop-2x: 1600px-->
+            <img srcset="img/video.jpg 280w, img/video@2x.jpg 560w,
             img/video-tablet.jpg 648w, img/video-tablet@2x.jpg 1296w,
             img/video.jpg 800w, img/video-desktop@2x.jpg 1600w" sizes="(min-width: 1200px) 800px, (min-width: 768px) and (max-width: 1199px) 648px, (max-width: 767px) 280px" src="img/video.jpg" width="280" height="177"
-            alt="Поток машин на дороге через горы.">
-        </picture>
-        <button class="video__button" type="button" aria-label="воспроизвести видео.">
-          <svg width="48" height="54" viewBox="0 0 48 54">
+              alt="Поток машин на дороге через горы.">
+          </picture>
+        </a>
+        <button class="video__button" type="button">
+          <svg width="48" height="54" viewBox="0 0 48 54" aria-hidden="true" focusable="false">
             <use href="img/icons/sprite.svg#play-icon"></use>
           </svg>
+          <span class="visually-hidden">воспроизвести видео.</span>
         </button>
       </div>
     </section>
@@ -219,7 +222,7 @@
       <li class="social__item">
         <a class="social__link" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">ссылка на группу вк.</span>
-          <svg width="24" height="24" viewBox="0 0 24 24">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <use href="img/icons/sprite.svg#vk-icon"></use>
           </svg>
         </a>
@@ -227,7 +230,7 @@
       <li class="social__item">
         <a class="social__link" href="https://t.me/htmlacademy">
           <span class="visually-hidden">ссылка на телеграмм-канал.</span>
-          <svg width="24" height="24" viewBox="0 0 24 24">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <use href="img/icons/sprite.svg#tg-icon"></use>
           </svg>
         </a>
@@ -235,7 +238,7 @@
       <li class="social__item">
         <a class="social__link" href="https://www.youtube.com/user/htmlacademyry">
           <span class="visually-hidden">ссылка на ютуб-канал.</span>
-          <svg width="24" height="24" viewBox="0 0 24 24">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <use href="img/icons/sprite.svg#youtube-icon"></use>
           </svg>
         </a>
