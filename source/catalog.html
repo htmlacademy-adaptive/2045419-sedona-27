@@ -55,142 +55,136 @@
     </section>
     <section class="multimedia">
       <h2 class="visually-hidden">Мультимедийная галерея.</h2>
-      <div class="multimedia__block picture-block">
-        <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-image-desktop.webp, img/road-image-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/road-image-tablet.webp, img/road-image-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/road-image.webp, img/road-image@2x.webp 2x">
-            <!--mobile-1x: 280px-->
-            <!--mobile-2x: 560px-->
-            <!--tablet-1x: 648px-->
-            <!--tablet-2x: 1296px-->
-            <!--desktop-1x: 1200px-->
-            <!--desktop-2x: 2400px-->
-            <img srcset="img/road-image.jpg 280w, img/road-image@2x.jpg 560w,
+      <ul class="multimedia__list">
+        <li class="multimedia__list__block picture-block">
+          <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-image-desktop.webp, img/road-image-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/road-image-tablet.webp, img/road-image-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/road-image.webp, img/road-image@2x.webp 2x">
+              <!--mobile-1x: 280px-->
+              <!--mobile-2x: 560px-->
+              <!--tablet-1x: 648px-->
+              <!--tablet-2x: 1296px-->
+              <!--desktop-1x: 1200px-->
+              <!--desktop-2x: 2400px-->
+              <img srcset="img/road-image.jpg 280w, img/road-image@2x.jpg 560w,
             img/road-image-tablet.jpg 648w, img/road-image-tablet@2x.jpg 1296w,
             img/road-image-desktop.jpg 1200w, img/road-image-desktop@2x.jpg 2400w" sizes="(min-width: 1200px) 1200px, (min-width: 768px) and (max-width: 1199px) 648px, (max-width: 767px) 280px" src="img/road-image.jpg" width="280" height="280"
-              alt="дорога под закатным небом.">
-          </picture>
-        </a>
-        <div class="picture-block__wrapper picture-block__wrapper--extra-padding">
-          <div class="picture-block__text-wrapper">
-            <p class="picture-block__title">Неродные просторы</p>
-            <p class="picture-block__author">Автор фото: Борис</p>
+                alt="дорога под закатным небом.">
+            </picture>
+          </a>
+          <div class="picture-block__wrapper picture-block__wrapper--extra-padding">
+            <div class="picture-block__text-wrapper">
+              <p class="picture-block__title">Неродные просторы</p>
+              <p class="picture-block__author">Автор фото: Борис</p>
+            </div>
+              <button class="picture-block__rating" type="button">
+                <span class="visually-hidden">Поставить оценку.</span>
+                <svg width="23" height="21" viewBox="0 0 23 21">
+                  <use href="img/icons/sprite.svg#like-icon"></use>
+                </svg>
+                <span class="picture-block__number">1350</span>
+              </button>
           </div>
-          <div class="picture-block__rating-wrapper">
-            <button class="picture-block__rating" type="button">
-              <span class="visually-hidden">Поставить оценку.</span>
-              <svg width="23" height="21" viewBox="0 0 23 21">
-                <use href="img/icons/sprite.svg#like-icon"></use>
-              </svg>
-            </button>
-            <span class="picture-block__number">1350</span>
-          </div>
-        </div>
-      </div>
-      <div class="multimedia__block picture-block">
-        <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/cactus-image-desktop.webp, img/cactus-image-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/road-image-tablet.webp, img/cactus-image-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/cactus-image.webp, img/cactus-image@2x.webp 2x">
-            <!--mobile-1x: 280px-->
-            <!--mobile-2x: 560px-->
-            <!--tablet-1x: 324px-->
-            <!--tablet-2x: 648px-->
-            <!--desktop-1x: 400px-->
-            <!--desktop-2x: 800px-->
-            <img srcset="img/cactus-image.jpg 280w, img/cactus-image@2x.jpg 560w,
+        </li>
+        <li class="multimedia__list__block picture-block">
+          <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/cactus-image-desktop.webp, img/cactus-image-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/road-image-tablet.webp, img/cactus-image-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cactus-image.webp, img/cactus-image@2x.webp 2x">
+              <!--mobile-1x: 280px-->
+              <!--mobile-2x: 560px-->
+              <!--tablet-1x: 324px-->
+              <!--tablet-2x: 648px-->
+              <!--desktop-1x: 400px-->
+              <!--desktop-2x: 800px-->
+              <img srcset="img/cactus-image.jpg 280w, img/cactus-image@2x.jpg 560w,
               img/cactus-image-tablet.jpg 324w, img/cactus-image-tablet@2x.jpg 648w,
               img/cactus-image-desktop.jpg 400w, img/cactus-image-desktop@2x.jpg 800w" sizes="(min-width: 1200px) 400px, (min-width: 768px) and (max-width: 1199px) 324px, (max-width: 767px) 280px" src="img/cactus-image.jpg" width="280" height="280"
-              alt="кактусы на фоне гор.">
-          </picture>
-        </a>
-        <div class="picture-block__wrapper">
-          <div class="picture-block__text-wrapper">
-            <p class="picture-block__title">Местная растительность</p>
-            <p class="picture-block__author">Автор фото: Сергей</p>
+                alt="кактусы на фоне гор.">
+            </picture>
+          </a>
+          <div class="picture-block__wrapper">
+            <div class="picture-block__text-wrapper">
+              <p class="picture-block__title">Местная растительность</p>
+              <p class="picture-block__author">Автор фото: Сергей</p>
+            </div>
+              <button class="picture-block__rating" type="button">
+                <span class="visually-hidden">Поставить оценку.</span>
+                <svg width="23" height="21" viewBox="0 0 23 21">
+                  <use href="img/icons/sprite.svg#like-icon"></use>
+                </svg>
+                <span class="picture-block__number">143</span>
+              </button>
           </div>
-          <div class="picture-block__rating-wrapper">
-            <button class="picture-block__rating" type="button">
-              <span class="visually-hidden">Поставить оценку.</span>
-              <svg width="23" height="21" viewBox="0 0 23 21">
-                <use href="img/icons/sprite.svg#like-icon"></use>
-              </svg>
-            </button>
-            <span class="picture-block__number">143</span>
-          </div>
-        </div>
-      </div>
-      <div class="multimedia__block picture-block">
-        <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/tree-road-desktop.webp, img/tree-road-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/tree-road-tablet.webp, img/tree-road-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/tree-road.webp, img/tree-road@2x.webp 2x">
-            <!--mobile-1x: 280px-->
-            <!--mobile-2x: 560px-->
-            <!--tablet-1x: 324px-->
-            <!--tablet-2x: 648px-->
-            <!--desktop-1x: 400px-->
-            <!--desktop-2x: 800px-->
-            <img srcset="img/tree-road.jpg 280w, img/tree-road@2x.jpg 560w,
+        </li>
+        <li class="multimedia__list__block picture-block">
+          <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/tree-road-desktop.webp, img/tree-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/tree-road-tablet.webp, img/tree-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/tree-road.webp, img/tree-road@2x.webp 2x">
+              <!--mobile-1x: 280px-->
+              <!--mobile-2x: 560px-->
+              <!--tablet-1x: 324px-->
+              <!--tablet-2x: 648px-->
+              <!--desktop-1x: 400px-->
+              <!--desktop-2x: 800px-->
+              <img srcset="img/tree-road.jpg 280w, img/tree-road@2x.jpg 560w,
               img/tree-road-tablet.jpg 324w, img/tree-road-tablet@2x.jpg 648w,
               img/tree-road.jpg 400w, img/tree-road-desktop@2x.jpg 800w" sizes="(min-width: 1200px) 400px, (min-width: 768px) and (max-width: 1199px) 324px, (max-width: 767px) 280px" src="img/tree-road.jpg" width="280" height="280"
-              alt="дорога петляющая в горах.">
-          </picture>
-        </a>
-        <div class="picture-block__wrapper">
-          <div class="picture-block__text-wrapper">
-            <p class="picture-block__title">Дорога на север</p>
-            <p class="picture-block__author">Автор фото: Петр</p>
+                alt="дорога петляющая в горах.">
+            </picture>
+          </a>
+          <div class="picture-block__wrapper">
+            <div class="picture-block__text-wrapper">
+              <p class="picture-block__title">Дорога на север</p>
+              <p class="picture-block__author">Автор фото: Петр</p>
+            </div>
+              <button class="picture-block__rating picture-block__rating--min-size" type="button">
+                <span class="visually-hidden">Поставить оценку.</span>
+                <svg width="23" height="21" viewBox="0 0 23 21">
+                  <use href="img/icons/sprite.svg#like-icon"></use>
+                </svg>
+                <span class="picture-block__number">96</span>
+              </button>
           </div>
-          <div class="picture-block__rating-wrapper">
-            <button class="picture-block__rating" type="button">
-              <span class="visually-hidden">Поставить оценку.</span>
-              <svg width="23" height="21" viewBox="0 0 23 21">
-                <use href="img/icons/sprite.svg#like-icon"></use>
-              </svg>
-            </button>
-            <span class="picture-block__number">96</span>
-          </div>
-        </div>
-      </div>
-      <div class="multimedia__block picture-block">
-        <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/bridge-image-desktop.webp, img/bridge-image-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/bridge-image-tablet.webp, img/bridge-image-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/bridge-image.webp, img/bridge-image@2x.webp 2x">
-            <!--mobile-1x: 280px-->
-            <!--mobile-2x: 560px-->
-            <!--tablet-1x: 324px-->
-            <!--tablet-2x: 648px-->
-            <!--desktop-1x: 400px-->
-            <!--desktop-2x: 800px-->
-            <img srcset="img/bridge-image.jpg 280w, img/bridge-image@2x.jpg 560w,
+        </li>
+        <li class="multimedia__list__block picture-block">
+          <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/bridge-image-desktop.webp, img/bridge-image-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bridge-image-tablet.webp, img/bridge-image-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bridge-image.webp, img/bridge-image@2x.webp 2x">
+              <!--mobile-1x: 280px-->
+              <!--mobile-2x: 560px-->
+              <!--tablet-1x: 324px-->
+              <!--tablet-2x: 648px-->
+              <!--desktop-1x: 400px-->
+              <!--desktop-2x: 800px-->
+              <img srcset="img/bridge-image.jpg 280w, img/bridge-image@2x.jpg 560w,
               img/bridge-image-tablet.jpg 324w, img/bridge-image-tablet@2x.jpg 648w,
               img/bridge-image.jpg 400w, img/bridge-image-desktop@2x.jpg 800w" sizes="(min-width: 1200px) 400px, (min-width: 768px) and (max-width: 1199px) 324px, (max-width: 767px) 280px" src="img/bridge-image.jpg" width="280" height="280"
-              alt="скала выглядящая как мост.">
-          </picture>
-        </a>
-        <div class="picture-block__wrapper">
-          <div class="picture-block__text-wrapper">
-            <p class="picture-block__title">Мост дьявола</p>
-            <p class="picture-block__author">Автор фото: Антон</p>
+                alt="скала выглядящая как мост.">
+            </picture>
+          </a>
+          <div class="picture-block__wrapper">
+            <div class="picture-block__text-wrapper">
+              <p class="picture-block__title">Мост дьявола</p>
+              <p class="picture-block__author">Автор фото: Антон</p>
+            </div>
+              <button class="picture-block__rating" type="button">
+                <span class="visually-hidden">Поставить оценку.</span>
+                <svg width="23" height="21" viewBox="0 0 23 21">
+                  <use href="img/icons/sprite.svg#like-icon"></use>
+                </svg>
+                <span class="picture-block__number">254</span>
+              </button>
           </div>
-          <div class="picture-block__rating-wrapper">
-            <button class="picture-block__rating" type="button">
-              <span class="visually-hidden">Поставить оценку.</span>
-              <svg width="23" height="21" viewBox="0 0 23 21">
-                <use href="img/icons/sprite.svg#like-icon"></use>
-              </svg>
-            </button>
-            <span class="picture-block__number">254</span>
-          </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
     <section class="video">
       <h2 class="video__title">Все еще сомневаетесь?</h2>

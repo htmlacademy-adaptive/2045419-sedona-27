@@ -17,6 +17,20 @@
   }
 }
 
+.control:hover .control__mark {
+  background-color: #e5e5e5;
+}
+
+.control:active .control__mark {
+  background-color: #d5d5d5;
+}
+
+.control:active .control__input:checked + .control__mark {
+  &::before {
+    opacity: 0.3;
+  }
+}
+
 .control__input {
   &:checked + .control__mark::before {
     position: absolute;
@@ -27,23 +41,9 @@
   }
 }
 
-.control__input:hover + .control__mark {
-  background-color: #e5e5e5;
-}
-
 .control__input:focus + .control__mark {
   outline: 2px solid #333333;
   outline-offset: 1px;
-}
-
-.control__input:active + .control__mark {
-  background-color: #d5d5d5;
-}
-
-.control__input:checked:active + .control__mark {
-  &::before {
-    opacity: 0.3;
-  }
 }
 
 .control__input:disabled {

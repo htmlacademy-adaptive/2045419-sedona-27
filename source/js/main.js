@@ -1,14 +1,14 @@
 const navMain = document.querySelector('.navigation');
 const navToggle = document.querySelector('.navigation__button');
 const mapImg = document.querySelector('.map__img');
-const mapIframe = document.querySelector('.map__image');
+const mapIframe = document.querySelector('.map__iframe');
 navMain.classList.remove('navigation--no-js');
 const initMap = () => {
   const mapImg = document.querySelector('.map__img');
-  const mapIframe = document.querySelector('.map__image');
+  const mapIframe = document.querySelector('.map__iframe');
   if (mapImg && mapIframe) {
     mapImg.classList.remove('map__img--no-js');
-    mapIframe.classList.remove('map__image--no-js');
+    mapIframe.classList.remove('map__iframe--no-js');
   } else {
     return;
   }

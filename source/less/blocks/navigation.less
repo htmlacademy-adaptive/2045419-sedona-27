@@ -193,12 +193,12 @@
   cursor: pointer;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 700;
 
 
   @media (min-width: 768px) {
     padding: 18px 18px 17px 18px;
     color: #000000;
-    font-weight: 700;
     font-size: 14px;
     line-height: 21px;
   }
@@ -226,6 +226,16 @@
   @media (min-width: 768px) {
     color: rgba(0, 0, 0, 0.3);
     background-color: transparent;
+  }
+}
+
+.navigation__link:focus {
+  background-color: #125092;
+  outline: none;
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+    color: #125092;
   }
 }
 
