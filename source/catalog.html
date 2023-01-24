@@ -56,7 +56,7 @@
     <section class="multimedia">
       <h2 class="visually-hidden">Мультимедийная галерея.</h2>
       <ul class="multimedia__list">
-        <li class="multimedia__list__block picture-block">
+        <li class="multimedia__item picture-block">
           <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-image-desktop.webp, img/road-image-desktop@2x.webp 2x">
@@ -88,7 +88,7 @@
             </button>
           </div>
         </li>
-        <li class="multimedia__list__block picture-block">
+        <li class="multimedia__item picture-block">
           <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/cactus-image-desktop.webp, img/cactus-image-desktop@2x.webp 2x">
@@ -120,7 +120,7 @@
             </button>
           </div>
         </li>
-        <li class="multimedia__list__block picture-block">
+        <li class="multimedia__item picture-block">
           <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/tree-road-desktop.webp, img/tree-road-desktop@2x.webp 2x">
@@ -152,7 +152,7 @@
             </button>
           </div>
         </li>
-        <li class="multimedia__list__block picture-block">
+        <li class="multimedia__item picture-block">
           <a class="picture-block__link" href="#" aria-label="ссылка на работу автора.">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/bridge-image-desktop.webp, img/bridge-image-desktop@2x.webp 2x">
@@ -190,7 +190,6 @@
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
       <div class="video__wrapper">
-        <a class="video__link" href="#" aria-label="ссылка на мотивирующее видео">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp, img/video-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp, img/video-tablet@2x.webp 2x">
@@ -206,13 +205,11 @@
             img/video.jpg 800w, img/video-desktop@2x.jpg 1600w" sizes="(min-width: 1200px) 800px, (min-width: 768px) and (max-width: 1199px) 648px, (max-width: 767px) 280px" src="img/video.jpg" width="280" height="177"
               alt="Поток машин на дороге через горы.">
           </picture>
-        </a>
-        <button class="video__button" type="button">
+        <a class="video__link" href="#" aria-label="ссылка на мотивирующее видео.">
           <svg width="48" height="54" viewBox="0 0 48 54" aria-hidden="true" focusable="false">
             <use href="img/icons/sprite.svg#play-icon"></use>
           </svg>
-          <span class="visually-hidden">воспроизвести видео.</span>
-        </button>
+        </a>
       </div>
     </section>
   </main>

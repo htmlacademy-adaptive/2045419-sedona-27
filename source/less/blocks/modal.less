@@ -8,7 +8,6 @@
   display: none;
   justify-content: center;
   align-items: flex-start;
-
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -20,8 +19,6 @@
   display: none;
   width: 320px;
   margin: auto;
-  position: absolute;
-
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
@@ -32,28 +29,13 @@
 
 .modal--open-success .modal__container-success {
   display: block;
-  bottom: 35.7%;
-
-  @media (min-width: 768px) {
-    bottom: 47.2%;
-  }
-
-  @media (min-width: 1200px) {
-    bottom: 51%;
-  }
 }
 
 .modal--open-error .modal__container-error {
   display: block;
-  bottom: 69.5%;
 
   @media (min-width: 768px) {
     width: 400px;
-    bottom: 35%;
-  }
-
-  @media (min-width: 1200px) {
-    bottom: 41%;
   }
 }
 
