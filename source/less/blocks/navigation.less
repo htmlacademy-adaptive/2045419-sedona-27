@@ -32,6 +32,7 @@
   &--is-opened .navigation__list {
     @media (max-width: 767px) {
       display: flex;
+      z-index: 2;
     }
   }
 
@@ -56,6 +57,42 @@
       left: 0;
     }
   }
+
+  &--is-opened .navigation__link {
+    @media (max-width: 767px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &--no-js {
+    @media (max-width: 767px) {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  &--no-js .navigation__logo {
+    @media (max-width: 767px) {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--no-js .navigation__list {
+    @media (max-width: 767px) {
+      display: flex;
+      position: relative;
+    }
+  }
+
+  &--no-js .navigation__button {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
 }
 
 .navigation__logo {
@@ -63,6 +100,19 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.navigation__logo:hover,
+.navigation__logo:focus {
+  opacity: 0.9;
+}
+
+.navigation__logo:active {
+  opacity: 0.6;
+}
+
+.navigation__image {
+  max-width: initial;
 }
 
 .navigation__list {
@@ -143,34 +193,88 @@
   }
 }
 
-
 .navigation__link {
   color: #ffffff;
   text-decoration: none;
   display: block;
-  padding: 17px 12px;
+  padding: 18px 12px 11px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
 
   @media (min-width: 768px) {
     padding: 18px 18px 17px 18px;
     color: #000000;
+    font-size: 14px;
+    line-height: 21px;
   }
 
   &--current {
     @media (min-width: 768px) {
       color: #766357;
+      pointer-events: none;
     }
+  }
+}
+
+.navigation__link:hover {
+  background-color: #669ec0;
+
+  @media (min-width: 768px) {
+    color: #81b3d2;
+    background-color: transparent;
+  }
+}
+
+.navigation__link:active {
+  background-color: #5496db;
+
+  @media (min-width: 768px) {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+  }
+}
+
+.navigation__link:focus {
+  background-color: #125092;
+  outline: none;
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+    color: #125092;
   }
 }
 
 .navigation__button {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   background-color: transparent;
   border: none;
   width: 22px;
   height: 22px;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     display: none;
   }
+}
+
+.navigation__button:hover {
+  opacity: 0.6;
+}
+
+.navigation__button:active {
+  opacity: 0.3;
+}
+
+.navigation__button:focus {
+  opacity: 0.2;
+}
+
+.navigation__button:disabled {
+  opacity: 0.1;
+  pointer-events: none;
 }

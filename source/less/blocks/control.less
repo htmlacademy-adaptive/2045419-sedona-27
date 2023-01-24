@@ -1,7 +1,8 @@
 .control {
   display: grid;
   grid-template-columns: 46px 1fr;
-  gap: 10px;
+  gap: 16px;
+  cursor: pointer;
 
   &--circle .control__mark {
     border-radius: 50%;
@@ -11,8 +12,18 @@
     content: "";
     width: 16px;
     height: 16px;
-    background-color: #000000;
+    background-color: #333333;
     border-radius: 50%;
+  }
+}
+
+.control:active .control__mark {
+  background-color: #d5d5d5;
+}
+
+.control:active .control__input:checked + .control__mark {
+  &::before {
+    opacity: 0.3;
   }
 }
 
@@ -26,12 +37,28 @@
   }
 }
 
+.control__input:focus + .control__mark {
+  outline: 2px solid #333333;
+  outline-offset: 1px;
+}
+
+.control__input:disabled {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.control:hover .control__mark {
+  background-color: #e5e5e5;
+  outline: none;
+}
+
 .control__mark {
   position: relative;
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .control__label {

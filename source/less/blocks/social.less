@@ -9,5 +9,24 @@
   min-width: 48px;
   min-height: 48px;
   background-color: #81b3d2;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:focus {
+  background-color: #125092;
+  outline: none;
+}
+
+.social__link:active {
+  background-color: #5496bd;
+}
+
+.social__link:active svg {
+  opacity: 0.3;
 }

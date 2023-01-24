@@ -1,8 +1,21 @@
 .map {
   min-height: 350px;
+  max-height: 350px;
   display: flex;
 }
 
-.map__image {
+.map__iframe {
   flex-grow: 1;
+
+  &--no-js {
+    display: none;
+  }
+}
+
+.map__img {
+  display: none;
+
+  &--no-js {
+    display: block;
+  }
 }
